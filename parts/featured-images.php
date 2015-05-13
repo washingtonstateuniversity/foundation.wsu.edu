@@ -11,10 +11,11 @@ if ( spine_has_background_image() ) {
 <?php } ?>
 
 <?php if ( spine_has_featured_image() ) {
-	$featured_image_src = spine_get_featured_image_src(); ?>
-	<figure class="featured-image" style="background-image: url('<?php echo $featured_image_src ?>');">
-		<?php spine_the_featured_image(); ?>
-	</figure>
+	$featured_image_src = spine_get_featured_image_src();
+	?>
+
+	<style> .main-header { background-image: url(<?php echo esc_url( $featured_image_src ); ?>); }</style>
+
 <?php } ?>
 
 <section class="row single give-bar">
