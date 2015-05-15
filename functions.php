@@ -1,5 +1,7 @@
 <?php
 
+include_once( __DIR__ . '/includes/plugin-campaign-progress-shortcode.php' );
+
 add_filter( 'wsu_color_palette_values', 'wsu_foundation_color_palette' );
 function wsu_foundation_color_palette( $palletes ) {
 	$new_palettes = array(
