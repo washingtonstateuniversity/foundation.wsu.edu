@@ -96,6 +96,9 @@ class WSU_Foundation_Campaign_Progress {
 		$goal_perc = round( ( $goal_current / $goal_dollars ) * 100 );
 
 		return '<div class="campaign-progress-bar campaign-progress-bar-slug">
+				<div class="campaign-area-name">
+					' . esc_html( $post->post_title ) . '
+				</div>
 				<div class="campaign-goal">
 					<span class="campaign-goal-text">Campaign Goal:</span> <span class="campaign-goal-value">$' . $goal_dollars . ' million</span>
 				</div>
