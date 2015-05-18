@@ -103,6 +103,7 @@ class WSU_Foundation_Campaign_Progress {
 					<span class="campaign-goal-text">Campaign Goal:</span> <span class="campaign-goal-value">$' . $goal_dollars . ' million</span>
 				</div>
 				<div class="campaign-progress">
+					<span class="progress-bar" style="width: ' . $goal_perc . '%;"></span>
 					<div class="progress-percent">$' . $goal_current . ' (' . $goal_perc . '%)</div>
 				</div>
 				<div class="campaign-updated">In Millions as of ' . esc_html( $goal_updated ) . '</div>
