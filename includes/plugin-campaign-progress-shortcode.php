@@ -89,13 +89,19 @@ class WSU_Foundation_Campaign_Progress {
 			return '';
 		}
 
-		$goal_dollars = absint( get_post_meta( $post->ID, $this->goal_dollars_meta_key, true ) );
-		$goal_current = absint( get_post_meta( $post->ID, $this->goal_current_meta_key, true ) );
+		// Round dollar amounts to two decimal points and then use floatval to reduce the 0s.
+		$goal_dollars = round( get_post_meta( $post->ID, $this->goal_dollars_meta_key, true ), 2 );
+		$goal_dollars = floatval( $goal_dollars );
+
+		$goal_current = round( get_post_meta( $post->ID, $this->goal_current_meta_key, true ), 2 );
+		$goal_current = floatval( $goal_current );
+
+		// Round the calculated percentage of dollar amounts to 2 decimal points.
+		$goal_perc = round( ( $goal_current / $goal_dollars ) * 100, 2 );
+
 		$goal_updated = get_post_meta( $post->ID, $this->goal_updated_meta_key, true );
 
-		$goal_perc = round( ( $goal_current / $goal_dollars ) * 100 );
-
-		return '<div class="campaign-progress-bar campaign-progress-bar-slug">
+		$output = '<div class="campaign-progress-bar campaign-progress-bar-slug">
 				<div class="campaign-area-name">
 					' . esc_html( $post->post_title ) . '
 				</div>
@@ -108,6 +114,8 @@ class WSU_Foundation_Campaign_Progress {
 				</div>
 				<div class="campaign-updated">In Millions as of ' . esc_html( $goal_updated ) . '</div>
 			</div>';
+
+		return $output;
 	}
 
 	/**
