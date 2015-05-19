@@ -13,3 +13,13 @@ function wsu_foundation_color_palette( $palletes ) {
 
 	return $palletes;
 }
+
+add_filter( 'spine_get_campus_home_url', 'wsu_foundation_campus_home_url' );
+/**
+ * Filter the URL used in the mark in the Spine header.
+ *
+ * @return string
+ */
+function wsu_foundation_campus_home_url() {
+	return 'https://foundation.wsu.edu/';
+}
