@@ -24,7 +24,7 @@
 					// If no display name is available, use the title.
 					if ( empty( $display_name ) ) : $display_name = get_the_title(); endif; ?>
 
-					<span class="article-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php echo esc_html( $display_name ); ?></a></span><?php
+					<span class="article-title"><?php echo esc_html( $display_name ); ?></span><?php
 
 					if ( ! empty( $display_data['title'] ) ) : ?><span class="person-title"><?php echo esc_html( $display_data['title'] ); ?></span><?php endif;
 					if ( ! empty( $display_data['title_secondary'] ) ) : ?><span class="person-title-secondary"><?php echo esc_html( $display_data['title_secondary'] ); ?></span><?php endif;
