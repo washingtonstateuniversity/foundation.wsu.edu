@@ -15,7 +15,7 @@
 </section>
 <section class="row side-right gutter pad-ends entity-section">
 	<div id="people-list" class="column one">
-		<input type="text" id="filter-people" value="" />
+		<input type="text" id="filter-people" value="" placeholder="Filter" />
 
 		<?php while ( have_posts() ) : the_post(); ?>
 			<?php get_template_part( 'articles/post', get_post_type() ); ?>
