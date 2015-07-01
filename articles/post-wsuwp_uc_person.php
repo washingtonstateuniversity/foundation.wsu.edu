@@ -16,7 +16,7 @@
 
 					// Create the name for display. If a first and last name are set, then look for a suffix and attach.
 					if ( ! empty( trim( $display_data['first_name'] ) ) && ! empty( trim( $display_data['last_name'] ) ) ) {
-						$display_name = trim( join( ', ', array( $display_data['last_name'], $display_data['first_name'] ) ) );
+						$display_name = trim( $display_data['first_name'] . ' ' . $display_data['last_name'] );
 
 						if ( ! empty( $display_data['suffix'] ) ) : $display_name .= ', ' . $display_data['suffix']; endif;
 					}
@@ -24,7 +24,7 @@
 					// If no display name is available, use the title.
 					if ( empty( $display_name ) ) : $display_name = get_the_title(); endif; ?>
 
-					<span class="article-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php echo esc_html( $display_name ); ?></a></span><?php
+					<span class="article-title"><?php echo esc_html( $display_name ); ?></span><?php
 
 					if ( ! empty( $display_data['title'] ) ) : ?><span class="person-title"><?php echo esc_html( $display_data['title'] ); ?></span><?php endif;
 					if ( ! empty( $display_data['title_secondary'] ) ) : ?><span class="person-title-secondary"><?php echo esc_html( $display_data['title_secondary'] ); ?></span><?php endif;
