@@ -6,7 +6,7 @@
 		var re = new RegExp(jQuery(this).val(), "i");
 
 		$people.show().filter( function() {
-			return !re.test(jQuery(this).find('.article-title').text());
+			return !re.test(jQuery(this).find('.article-title, .person-title, .person-office, .person-phone, .person-email').text());
 		}).hide();
 	});
 }(jQuery, window));
