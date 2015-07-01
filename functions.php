@@ -24,3 +24,13 @@ add_filter( 'spine_get_campus_home_url', 'wsu_foundation_campus_home_url' );
 function wsu_foundation_campus_home_url() {
 	return 'https://foundation.wsu.edu/';
 }
+
+add_action( 'wp_enqueue_scripts', 'wsu_foundation_enqueue_scripts' );
+/**
+ * Enqueue scripts used in the Foundation theme.
+ */
+function wsu_foundation_enqueue_scripts() {
+	if ( is_post_type_archive( 'wsuwp_uc_person' ) ) {
+		wp_enqueue_script( 'wsu-foundation-people-filter', get_stylesheet_directory_uri() . '/js/foundation-people.js', array( 'jquery' ), spine_get_script_version(), true );
+	}
+}
