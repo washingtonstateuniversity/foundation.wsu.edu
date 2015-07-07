@@ -1,0 +1,251 @@
+/* Featured Slides */
+#featuredSlidesContainer {
+	height: 468px;
+	width: 100%;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #5F6A72;
+}
+#featuredSlides {
+	height: 468px;
+	width: 1008px;
+	padding:0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #5F6A72;
+	border-left-color: #5F6A72;
+}
+.cycle-slideshow img { display: none }
+.cycle-slideshow img.first { display: block }
+.cycle-slideshow {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow:hidden;
+}
+/* slideshow images (for most of the demos, these are the actual "slides") */
+.cycle-slideshow img {
+	/*
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	display: block;
+	margin:0;
+}
+.cycle-slideshow li {
+	/*
+    some of these styles will be set by the plugin (by default) but setting them here
+    helps avoid flash-of-unstyled-content
+    */
+	width:100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	display: block;
+	margin:0;
+	list-style-type: none;
+}
+/* in case script does not load */
+.cycle-slideshow img:first-child {
+	position: static;
+	z-index: 100;
+}
+/* prev / next links */
+.cycle-prev, .cycle-next {
+	position: absolute;
+	top: 0;
+	width: 40px;
+	opacity: 1;
+	filter: alpha(opacity=100);
+	z-index: 800;
+	height: 100%;
+	cursor: pointer;
+}
+.cycle-prev {
+	left: 0;
+	background-image: url(/homepage/img/slideArrowLeft.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.cycle-next {
+	right: 0;
+	background-image: url(/homepage/img/slideArrowRight.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.cycle-prev:hover, .cycle-next:hover {
+	opacity: 1;
+	filter: alpha(opacity=100)
+}
+.disabled {
+	opacity: .5;
+	filter:alpha(opacity=50);
+}
+/* display paused text on top of paused slideshow */
+.cycle-paused:after {
+	content: 'Paused';
+	color: white;
+	background: black;
+	padding: 10px;
+	z-index: 500;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	border-radius: 10px;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}
+
+/*
+    media queries
+    some style overrides to make things more pleasant on mobile devices
+*/
+
+@media only screen and (max-width: 480px), only screen and (max-device-width: 480px) {
+	.cycle-slideshow {
+		width: 200px;
+	}
+	.cycle-overlay {
+		padding: 4px
+	}
+	.cycle-caption {
+		bottom: 4px;
+		right: 4px
+	}
+}
+/* Featured Links */
+#featuredLinks {
+	width:100%;
+	height: 240px;
+	padding:25px;
+	background: #FFF;
+	background: -moz-linear-gradient(top, #68737a 0%, #ffffff 50%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#68737a), color-stop(50%,#ffffff)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #68737a 0%,#ffffff 50%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #68737a 0%,#ffffff 50%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #68737a 0%,#ffffff50%); /* IE10+ */
+	background: linear-gradient(to bottom, #68737a 0%,#ffffff 50%); /* W3C */
+
+}
+#featuredLinks .imgbutton {
+	background:#fff;
+	width:260px;
+	height:200px;
+	margin:0px;
+	padding:20px;
+}
+#featuredLinks .imgbutton a {
+	width:260px;
+	height:200px;
+}
+#featuredLinks .imgbutton p {
+	top:184px;
+}
+/* Useful Links */
+#usefulLinksSectionWrap {
+	padding: 0px;
+	height: 250px;
+	width: 100%;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #5f6a72;
+	margin: 0px;
+	å
+}
+#usefulLinksSection {
+	height: 196px;
+	width: 954px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-bottom: 0px;
+	margin-left: auto;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: #5f6a72;
+	border-left-color: #5f6a72;
+	padding:27px;
+	overflow:hidden;
+	background-image: url(/img/cphpfadefd.jpg);
+	background-repeat: no-repeat;
+	background-position: 100% 100%;
+}
+#usefulLinksSection h2 {
+	text-transform: uppercase;
+	color: #87081f;
+	font-style:normal;
+	font-weight: 500;
+	margin-top:0px;
+	margin-bottom:12px;
+	padding-top:0px;
+}
+#usefulLinksSection ul li.column1 {
+	margin-left: 1em;
+}
+#usefulLinksSection ul li.column2 {
+	margin-left:19em;
+	line-height: 24pt;
+}
+#usefulLinksSection ul li.reset {
+	margin-top: -10em;
+}
+#usefulLinksSection ul {
+	list-style:none;
+	display: block;
+	margin-left: -10px;
+	float: left;
+}
+#usefulLinksSection ul li {
+	display: block;
+	height:24pt;
+	padding-right: 4px;
+	padding-left: 0px;
+	vertical-align: middle;
+}
+#usefulLinksSection ul li a {
+	width:100%;
+	height:100%;
+	font-size:14pt;
+	color: #535353;
+	display:block;
+	padding-bottom: 0px;
+	padding-top: 0px;
+	padding-left:15px;
+	margin-bottom:0px;
+	margin-top:0px;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	line-height: 24pt;
+}
+#usefulLinksSection  ul li a:hover {
+	color: #1690A9;
+	background-image: url(/homepage/img/itemselect.png);
+	background-repeat: no-repeat;
+	background-position: 0% 45%;
+	background-color: transparent;
+	vertical-align: middle;
+}
+/* Stelter Fix */
+#stlSlideshow .cycle-slideshow {
+	z-index:800;
+}
+.bantxt {
+	z-index:800;
+}
+.banner {
+	z-index:800;
+}
