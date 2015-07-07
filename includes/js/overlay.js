@@ -14,7 +14,7 @@
 	 *
 	 * @type {number}
 	 */
-	var expiry_time = 5; //60 * 60 * 24;
+	var expiry_time = 60 * 60 * 1;
 
 	/**
 	 * Check if the visitor has previously dismissed the overlay.
