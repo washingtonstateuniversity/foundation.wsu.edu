@@ -1,0 +1,51 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+BEGIN CMS template styles
+The first part .(name) is the page that the style next to it is targeting on
+END CMS template styles
+*/
+
+.ways_to_give_index #HeadBranding {
+	background-image: url(/img/banners/fallcolour.jpg);
+}
+.ways_to_give_bequests #HeadBranding {
+	background-image: url(/img/banners/femalessmiling.jpg);
+}
+.ways_to_give_bushelsforbutch #HeadBranding {
+	background-image: url(/img/banners/butchwheat.jpg);
+}
+.ways_to_give_cashgifts #HeadBranding {
+	background-image: url(/img/banners/studentflashmob.jpg);
+}
+.ways_to_give_endowedgifts #HeadBranding {
+	background-image: url(/img/banners/about.jpg);
+}
+.ways_to_give_endowment_performance #HeadBranding {
+	background-image: url(/img/banners/about.jpg);
+}
+.ways_to_give_faq #HeadBranding {
+	background-image: url(/img/banners/about.jpg);
+}
+.ways_to_give_giftsofstock #HeadBranding {
+	background-image: url(/img/banners/cubstudy.jpg);
+}
+.ways_to_give_how_endowed_gifts_work #HeadBranding {
+	background-image: url(/img/banners/about.jpg);
+}
+.ways_to_give_investment_management_and_fees #HeadBranding {
+	background-image: url(/img/banners/about.jpg);
+}
+.ways_to_give_investment_strategy #HeadBranding {
+	background-image: url(/img/banners/about.jpg);
+}
+.ways_to_give_matchinggifts #HeadBranding {
+	background-image: url(/img/banners/gah.jpg);
+}
+.ways_to_give_noncashassets #HeadBranding {
+	background-image: url(/img/banners/studentdiscussion.jpg);
+}
+.events_holiday_index  #HeadBranding {
+	background-image: url(/img/banners/holiday.jpg);
+}
