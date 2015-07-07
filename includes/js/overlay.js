@@ -7,14 +7,14 @@
 	 *
 	 * @type {string}
 	 */
-	var cookie_name = 'wsu_overlay_dismiss_aa';
+	var cookie_name = 'wsu_overlay_dismiss_fa';
 
 	/**
 	 * Length of time in seconds for cookie expiration date.
 	 *
 	 * @type {number}
 	 */
-	var expiry_time = 60 * 60 * 24;
+	var expiry_time = 5; //60 * 60 * 24;
 
 	/**
 	 * Check if the visitor has previously dismissed the overlay.
