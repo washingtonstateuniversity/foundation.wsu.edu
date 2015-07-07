@@ -3,6 +3,7 @@
 include_once( __DIR__ . '/includes/plugin-campaign-progress-shortcode.php' );
 include_once( __DIR__ . '/includes/plugin-large-people-list.php' );
 include_once( __DIR__ . '/includes/plugin-wsu-home-overlay.php' );
+include_once( __DIR__ . '/includes/plugin-foundation-shortcodes.php' );
 
 add_filter( 'wsu_color_palette_values', 'wsu_foundation_color_palette' );
 function wsu_foundation_color_palette( $palletes ) {
