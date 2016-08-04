@@ -4,7 +4,7 @@
 		<header class="article-header">
 				<?php
 				if ( has_post_thumbnail() ) {
-					?><figure class="article-thumbnail"><?php the_post_thumbnail( array( 132, 132, true ) ); ?></figure><?php
+					?><figure class="article-thumbnail"><?php the_post_thumbnail( array( 88, 132, true ) ); ?></figure><?php
 				}
 
 				if ( function_exists( 'wsuwp_uc_get_meta' ) ) {
