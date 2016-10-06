@@ -15,6 +15,7 @@
 		<p>Town Centre Building, 3rd Floor • 255 E. Main Street, Suite 301
 			<br> PO Box 641925 • Pullman, WA 99164-1925
 			<br> Phone: 509-335-6686, or 800-GIV-2-WSU (448-2978)
-			<br> Fax: 509-335-4788 • Email: foundation@wsu.edu</p>
+			<br> Fax: 509-335-4788 • Email: <a href="mailto:foundation@wsu.edu">foundation@wsu.edu</a>
+			<br> IRS Tax ID:  91-1075542</p>
 	</div>
 </section>
