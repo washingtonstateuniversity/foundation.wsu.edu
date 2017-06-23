@@ -20,6 +20,6 @@ if ( spine_has_background_image() ) {
 
 <section class="row single give-bar">
 	<div class="column one ">
-		<a href="https://secure.wsu.edu/give/"><img class="alignnone size-medium" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/foundation-give-icon.svg' ); ?>" alt="foundation-give-icon"> Give to WSU</a>
+		<a href="https://foundation.wsu.edu/give/"><img class="alignnone size-medium" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/foundation-give-icon.svg' ); ?>" alt="foundation-give-icon"> Give to WSU</a>
 	</div>
 </section>

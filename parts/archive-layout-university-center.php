@@ -10,7 +10,7 @@
 </div>
 	<section class="row single give-bar">
 	<div class="column one ">
-		<a href="https://secure.wsu.edu/give/" class="tracked" role="click_click_internal"><img class="alignnone size-medium" src="https://stage.foundation.wsu.edu/wp-content/themes/wsu-foundation-theme/images/foundation-give-icon.svg" alt="foundation-give-icon"> Give to WSU</a>
+		<a href="https://foundation.wsu.edu/give/" class="tracked" role="click_click_internal"><img class="alignnone size-medium" src="https://stage.foundation.wsu.edu/wp-content/themes/wsu-foundation-theme/images/foundation-give-icon.svg" alt="foundation-give-icon"> Give to WSU</a>
 	</div>
 </section>
 <section class="row side-right gutter pad-ends entity-section">
