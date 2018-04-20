@@ -10,7 +10,7 @@
 </div>
 	<section class="row single give-bar">
 	<div class="column one ">
-		<a href="https://foundation.wsu.edu/give/" class="tracked"><img class="alignnone size-medium" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/foundation-give-icon.svg' ); ?>" alt="Give to WSU"> Give to WSU</a>
+		<a href="https://foundation.wsu.edu/give/" class="tracked"><img class="alignnone size-medium" src="<?php echo esc_url( get_stylesheet_directory_uri() . '/images/foundation-give-icon.svg' ); ?>" alt=""> Give to WSU</a>
 	</div>
 </section>
 <section class="row side-right gutter pad-ends entity-section">
